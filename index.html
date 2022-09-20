@@ -8,25 +8,20 @@
 	body {text-align:center;}
 	</style>
 <script language="JavaScript">
-    function WinOpen(x)
+    function WinOpen()
     {
-    window.open(x,"okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=500,left=500");
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
     }
-    function kod(x)
-    {
-    window.open(x,"okienko","toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=200");
-    }
-    </script>
+	
+</script>
 </head>
-
-
 <body>
     <p style="font-size: 2cm; text-align: center"> Młodzieniak </p>
     <form>
-        <input type="button" value="Zadanie1 Działanie" onclick="WinOpen('zadanie1.html')">
-        <input type="button" value="Zadanie1 Kod" onclick="kod('zadanie1-kod.html')"><br>
-		<input type="button" value="Zadanie2" onclick="WinOpen('zadanie2.html')">
-		<input type="button" value="Zadanie2 Kod" onclick="kod('zadanie2-kod.html')">
+        <input type="button" name="przycisk" value="Zadanie 1" onclick="WinOpen('zadanie1.html')">
+        <input type="button" name="przycisk" value="Zadanie 1 Kod" onclick="kod('zadanie1-kod.html')"><br>
+		<input type="button" value="Zadanie 2" onclick="WinOpen('zadanie2.html')">
+		<input type="button" value="Zadanie 2 Kod" onclick="kod('zadanie2-kod.html')">
     </form>
 </body>
 <!-- Daria Mlodzieniak 3F-->
