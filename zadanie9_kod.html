@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-    <body>
-      <textarea rows="20" cols="15">
 <html>
-	<body>
-		<div style="color:red;font-size:50px;">
-			<script language="JavaScript">
-			var liczba1=prompt("podaj m=","");
-			var m_mlo=parseFloat(liczba1);
-document.write
-("1/"+m_mlo+"=1/"+(m_mlo+1)+"+"+"1/"+m_mlo*(m_mlo+1)+"<br>");
-			</script>
-		</div>
-	</body>
-</html>
-</textarea>
+<body>
+	<textarea rows="40" cols="40">
+<div style="color:green;font-size:53px;">
+ <script language="JavaScript">
+var liczba1=prompt("Podaj pierwszą datę ze stycznia","");
+var liczba2=prompt("Podaj godzinę do pierwszej daty","");
+var liczba3=prompt("Podaj drugą datę ze stycznia","");
+var liczba4=prompt("Podaj godzinę do drugiej daty","");
+var suma;
+ var d1=parseFloat(liczba1);
+ var g1=parseFloat(liczba2);
+ var d2=parseFloat(liczba3);
+ var g2=parseFloat(liczba4);
+ suma=(d1-d2)*24*60*60;
+ suma2=suma-((24-g1)*60*60)+((24-g2)*60*60);
+   document.write("D1= "+d1+" sekund<br>");
+   document.write("G1= "+g1+" sekund<br>");
+   document.write("D2= "+d2+" sekund<br>");
+   document.write("G2= "+g2+" sekund<br>");
+ document.write("Ilość sekund między tymi dwoma dniami: "+suma2+" sekund<br>");
+ </script>
+</div>
+	</textarea>
 </body>
 </html>
