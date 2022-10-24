@@ -1,17 +1,23 @@
 <html>
  <body>
-  <div style="color:red;font-size:50px;">
+  <div style="color:blue;font-size:70px;">
    <script language="JavaScript">
    var liczba1=prompt("Podaj pierwszą liczbę A=","");
    var liczba2=prompt("Podaj drugą liczbę B=","");
-   var a_x=parseFloat(liczba1);
-   var b_x=parseFloat(liczba2);
-document.write("wczytane liczby: A="+a_x+" B="+b_x+"<br>");
-document.write("("+a_x+" + "+b_x+")^3=");
-document.write(a_x+"^3");
-document.write("+3*"+a_x+"^2*"+b_x);
-document.write("+3*"+a_x+"*"+b_x+"^2");
-document.write("+"+b_x+"^3");
+   var a_mlo=parseFloat(liczba1);
+   var b_mlo=parseFloat(liczba2);
+   var suma;
+    suma1=a_mlo*a_mlo*a_mlo;
+    suma2=3*(a_mlo*a_mlo)*b_mlo;
+    suma3=3*a_mlo*(b_mlo*b_mlo);
+    suma4=b_mlo*b_mlo*b_mlo;
+    suma5=suma1+suma2+suma3+suma4;
+document.write("wczytane liczby: A="+a_mlo+" B="+b_mlo+"<br>");
+document.write("("+a_mlo+"+"+b_mlo+")^3 = 
+               "+a_mlo+"^3 + 3*(("+a_mlo+")^2)*("+b_mlo+") 
+               + 3*("+a_mlo+")*(("+b_mlo+")^2) + "+b_mlo+"^3 
+               = "+suma1+" + "+suma2+" + "+suma3+" + "+suma4+" = 
+               "+suma5+"   <br>");
 </script>
 </div>
 </body>
