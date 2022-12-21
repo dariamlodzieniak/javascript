@@ -1,24 +1,16 @@
 <html>
  <head>
-<script type="text/javascript">
-function okno_zamknij_mlodzieniak()
+	 <meta charset="utf-8">
+	 <title> Przykład użycia pętli </title>
+	 <script language="JavaScript">
+for (var i=1; i<=9; i++)
 {
-window.close()
+	document.write("*");
 }
-</script>
-	</head>
-<body>
-<div style="color:red;font-size:50px;">
- <script language="JavaScript">
-var liczba1=prompt("liczba1=","");
-var liczba2=prompt("liczba2=","");
-var suma;
- var a=parseFloat(liczba1);
- var b=parseFloat(liczba2);
- suma=a+b;
- document.write("suma="+a+" + "+b+" = "+suma+"<br>");
- </script>
-</div>
-  <input type="button" value="zamknij okno" onclick="okno_zamknij_mlodzieniak()"/>
-</body>
-</html>
+		 document.write("<br>");
+		 for (var i=1; i<=(7-2); i++)
+		 {
+			 document.write("*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*");
+			 document.write("<br>");
+		 }
+	 </script>
