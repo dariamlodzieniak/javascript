@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <title> Zadanie 72 </title>
     <script language="JavaScript">
-      var x=prompt("Podaj szerokosc a=", "");
-      var a_mlo=x;
-      var y=prompt("Podaj wysokosc b=", "");
-      var b_mlo=y;
-      for (var i=1; i<=a_mlo; i++)
+      var a=prompt("Podaj wysokosc a=", "");
+      var a_mlo=a;
+      var b=prompt("Podaj szerokosc b=", "");
+      var b_mlo=b;
+      for (var i=1; i<=b_mlo; i++)
       {
         document.write("*");
+      }
+      document.write("<br>");
+      for (var i=1; i<=b_mlo-2; i++)
+      {
+       document.write("*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*");
       }
       document.write("<br>");
     </script>
