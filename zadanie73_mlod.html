@@ -5,15 +5,32 @@
     <title> Zadanie 73 </title>
     <script language="JavaScript">
       var imie=prompt("Podaj liczbę liter imienia", "");
-      var a_mlo=imie;
+      var b_mlo=imie;
       var nazwisko=prompt("Podaj liczbę liter nazwiska", "");
-      var b_mlo=nazwisko;
-
-      document.write("Liczba liter imienia="+a_mlo+"<br>");
-      document.write("Liczba liter nazwiska="+b_mlo+"<br>");
+      var a_mlo=nazwisko;
+      document.write("Liczba liter imienia="+b_mlo+"<br>");
+      document.write("Liczba liter nazwiska="+a_mlo+"<br>");
+      var b=b_mlo%4+5;
+      var a=a_mlo%6+20;
+      for (var i=1; i<=b; i++)
+      {
+        document.write("*");
+      }
+       document.write("<br>");
+       for (var i=1; i<=b-2; i++)
+      {
+      document.write("*&nbsp"); }
+                     document.write("*");
+      for (var i=1; i<=b; i++)
+      {
+        document.write("*");
+      }
     </script>
   </head>
   <body>
   </body>
 </html>
   
+
+    
+      
