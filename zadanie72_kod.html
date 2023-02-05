@@ -8,8 +8,42 @@ window.close()
 </script>
 	</head>
   <body>
-   <textarea rows="30" cols="60">
-  
+   <textarea rows="50" cols="60">
+  <html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title> Zadanie 72 </title>
+    <script language="JavaScript">
+      var a=prompt("Podaj wysokosc a=", "");
+      var a_mlo=a;
+      var b=prompt("Podaj szerokosc b=", "");
+      var b_mlo=b;
+      for (var i=1; i<=b_mlo; i++)
+      {
+        document.write("*");
+      }
+      document.write("<br>");
+       var wiersz_mlo="*";
+for ( var i=1; i<=(b-2); i++)
+ {
+ wiersz_mlo=wiersz_mlo+"&nbsp&nbsp";
+ }
+ wiersz_mlo=wiersz_mlo+"*";
+     for (var i=1; i<=a_mlo; i++)
+      {
+      document.write(wiersz_mlo);
+        document.write("<br>");
+      } 
+      for (var i=1; i<=b_mlo; i++)
+      {
+        document.write("*");
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
     </textarea>
     <input type="button" value="zamknij okno" onclick="okno_zamknij_mlodzieniak()"/>
     </body>
