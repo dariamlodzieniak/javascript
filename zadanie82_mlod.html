@@ -1,1 +1,39 @@
+<html> 
+<head> 
+<title> Zadanie 82</title>
+ <script language="JavaScript">
+ function pushbutton() {
+ alert("Czesc !");}
+ </script>
+ <style>
+ a {
+ color: green;
+ font-size: 20px;
+ }
+</style>
+</head> 
+<body> 
+<h1 style="color: red">Mlodzieniak</h1>
+<a>dzis = new Date() --> nowa data </a><br>
+<a>dzis = dzis.getHours() --> zwraca aktualną godzinę </a><br>
+<a>dzis = dzis.getMinutes() -->  zwraca minuty </a><br>
+<a>dzis = dzis.getMonth()+1 --> zwraca aktualny miesiąc </a><br>
+<a>dzis = dzis.getDate() --> zwraca dzień miesiąca </a><br>
+<a>dzis = dzis.getFullYear() --> zwraca pełną liczbę reprezentującą rok </a><br>
+Ostatnio zmodyfikowany 
+<script language="LiveScript">
+ document.write(document.lastModified,"<br>")
+</script>
 
+<form>
+ <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form> 
+<script language="JavaScript">
+ dzis = new Date()
+ document.write("<br><font size=1cm>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+ document.write("<br><font size=1cm>Aktualna data : <font color=red>",dzis.getDate(),",<font color=green>",dzis.getMonth()+1,",<font color=blue>",dzis.getFullYear());
+
+
+</script>
+</body> 
+</html>
