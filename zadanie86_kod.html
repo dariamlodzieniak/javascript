@@ -1,1 +1,34 @@
 
+<html lang="pl">
+<head>
+<title> Zadanie 86</title>
+<script>
+function przycisk1_mlodzieniak()
+{
+pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+}
+function przycisk2_mlodzieniak()
+{
+dzis = new Date();
+pokaz2.innerHTML="Aktualna data : "+dzis.getDate()+","+(dzis.getMonth()+1) +","+dzis.getFullYear();
+}
+function przycisk3_mlodzieniak()
+{
+dzis_mlo = new Date();
+pokaz3.innerHTML="Aktualny czas : "+dzis_mlo.getHours()+":"+dzis_mlo.getMinutes();
+}
+</script>
+</head>
+<body>
+<form>
+<a onclick="przycisk1_mlodzieniak(' ')"><img src="zdj1.png" alt="Przycisk1" border="0" onmouseover="this.src = 'zdj12.png'" onmouseout="this.src ='zdj1.png'" /></a>
+<a onclick="przycisk2_mlodzieniak(' ')"><img src="zdj2.png" alt="Przycisk2" border="0" onmouseover="this.src = 'zdj22.png'" onmouseout="this.src ='zdj2.png'" /></a>
+<a onclick="przycisk3_mlodzieniak(' ')"><img src="zdj3.png" alt="Przycisk3" border="0" onmouseover="this.src = 'zdj32.png'" onmouseout="this.src ='zdj3.png'" /></a>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<tr id="pokaz3"></tr>
+</table>
+</body>
+</html>
