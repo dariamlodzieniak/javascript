@@ -1,1 +1,32 @@
-
+<html>
+<head>
+<title> Zadanie 84</title>
+<script>
+function mlodzieniak_start()
+{
+start_mlo = new Date();
+poczatek_mlo=start_mlo.getTime()
+}
+function mlodzieniak_stop()
+{
+stop_mlo = new Date();
+koniec_mlo=stop_mlo.getTime()
+roznica_mlo=koniec_mlo-poczatek_mlo;
+pokaz1.innerHTML=roznica_mlo/1000+" s";
+}
+</script>
+</head>
+<body>
+<script>
+dzis_mlo = new Date();
+document.write("<br>Aktualny czas : ",dzis_mlo.getHours(),":",dzis_mlo.getMinutes());
+</script>
+<br>
+<input type="button" name="Button1" value="START stoper" onclick="mlodzieniak_start()">
+<input type="button" name="Button2" value="STOP stoper" onclick="mlodzieniak_stop()">
+<br>
+<table border=5>
+<tr id="pokaz1"></tr>
+</table>
+</body>
+</html>
