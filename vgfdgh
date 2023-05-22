@@ -1,0 +1,40 @@
+<!--zamówienie w lodziarni (rodzaje gałek, ile gałek,
+różne ceny gałek, dodatki posypka polewa owoce, napoje 
+LISTA ROZWIJALNA, check boxy do zniżek i vatów)-->
+
+
+<html lang="pl">
+<head>
+<title>Lodziarnia</title>
+<script language="JavaScript">
+</script>
+</head>
+<body>
+<form>
+<h3>DANE ZAMAWIAJĄCEGO</h3>
+Imię:<br>
+<input type="text" name="imie"><br>
+Nazwisko:<br>
+<input type="text" name="nazwisko"><br>
+Numer telefonu:<br>
+<input type="text" name="numer"><br>
+Adres e-mail:<br>
+<input type="text" name="mail"><br>
+Adres zamieszkania (miasto):<br>
+<input type="text" name="miasto"><br>
+Adres zamieszkania (ulica):<br>
+<input type="text" name="ulica"><br>
+Adres zamieszkania (nr domu):<br>
+<input type="text" name="dom"><br>
+
+<b>Wybierz rodzaj gałki:</b><br>
+Smak<select name="smak"/>
+<option value="truskawka"> truskawka
+<option value="czekolada"> czekolada
+<option value="wanilia"> wanilia
+<option value="jagoda"> jagoda
+<option value="karmel"> karmel
+</select><br><br>
+</form>
+</body>
+</html>
